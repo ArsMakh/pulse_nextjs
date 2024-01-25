@@ -1,0 +1,20 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" width="58.9" height="42.8" viewBox="0 0 58.9 42.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0f595e;
+      }
+
+      .cls-2 {
+        fill: #6092c4;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="17.81" y="30.59" width="34.92" height="7.04"/>
+  <polyline class="cls-1" points="52.73 25.03 17.81 25.03 17.81 18 52.73 18"/>
+  <polyline class="cls-1" points="52.73 12.44 17.81 12.44 17.81 5.41 52.73 5.41"/>
+  <rect class="cls-1" x="5.73" y="30.59" width="7.53" height="7.04"/>
+  <polyline class="cls-1" points="13.26 25.03 5.73 25.03 5.73 18 13.26 18"/>
+  <polyline class="cls-1" points="13.26 12.44 5.73 12.44 5.73 5.41 13.26 5.41"/>
+  <path class="cls-2" d="M58.65,42.51H.25V.51h58.4Zm-56.4-2h54.4v-38H2.25Z"/>
+</svg>

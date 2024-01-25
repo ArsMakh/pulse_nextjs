@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    background: white;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px;
+}
+
+a{text-decoration: none !important;}
+
+#wrap_form_login {
+    max-width: 360px;
+    width:100%;
+    margin: 0 auto;
+}
+#form_login {
+    box-shadow: 4px 16px 9px -5px #6191c4;
+    padding: 80px 30px 30px 30px;
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+#form_login::before {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: white;
+}
+#form_login::after {
+    content: "";
+    position: absolute;
+    bottom: -37px;
+    right: 0;
+    width: 70px;
+    height: 24px;
+    border-left: 1px solid #d45959;
+    border-bottom: 1px solid #d45959;
+}
+
+#form_login_logo {width: 275px;}
+#login_languages ul li a{font-size: 14px;}
+
+#form_login_content > ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    position: relative;
+    z-index: 3;
+}
+
+#form_login_content > ul > li {
+    margin: 2px 0;
+    box-shadow: 5px 5px 5px -1px #417b7fd1;
+    position: relative;
+    padding: 5px 14px 5px 42px;
+    border: 1px solid #417b7f;
+    background: white;
+    transition: all 0.4s;
+}
+
+#form_login_content > ul > li > img {
+    height: 24px;
+    position: absolute;
+    top: 7px;
+    left: 9px;
+}
+
+#form_login_content > ul > li > input {
+    margin: 0;
+    padding: 4px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1;
+    display: block;
+    width: 100%;
+    background: white;
+    box-sizing: border-box;
+    border: 1px solid #417b7f;
+    outline: none;
+    border-radius: 0;
+}
+
+#form_login_content button {
+    background: transparent;
+    color: #6191c4;
+    font-size: 13px;
+    display: inline-block;
+    border: none;
+    padding: 14px 2px 8px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    top: -3px;
+    right: -9px;
+    line-height: 1;
+}
+
+#form_login_content button:hover {
+    color: #d45959;
+}
+
+#form_login_content button img {
+    width: 68px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -6px;
+}
+
+#login_checkbox_wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#login_checkbox {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+#login_checkbox::before {
+    content: '';
+    width: 1px;
+    height: 86px;
+    background: #0f595e;
+    position: absolute;
+    top: -82px;
+    left: 11px;
+}
+
+#login_checkbox > label {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: white;
+    border: 1px solid #0f595e;
+    position: relative;
+    top: 2px;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#login_checkbox > input {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+#login_checkbox > .login_checkbox_decor {
+    display: none;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 7px;
+    height: 14px;
+    z-index: 2;
+    background-color: #0f595e;
+}
+
+#login_checkbox > input:checked + .login_checkbox_decor {
+    display: block;
+}
+
+#login_checkbox_wrapper > label + label {
+    color: #6191c4;
+    font-size: 15px;
+    line-height: 1.2;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 130px;
+}
+
+#login_info_text {
+    margin-top: 44px;
+    text-align: right;
+}
+
+#login_info_text a {
+    color: black;
+}
+
+#login_info_text p span {
+    color: #d45959;
+}
+
+#login_info_text > div:nth-child(2) {
+    color: black;
+    font-size: 12px;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+#reg_button {
+    color: #d45959;
+    background: transparent;
+    font-size: 15px;
+    font-weight: normal;
+    border: none;
+    line-height: 1.2;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+    padding: 0;
+}
+
+#login_info_text > div:nth-child(3) {
+    margin-top: 30px;
+}
+
+#login_info_text > div:nth-child(3) {
+    margin-top: 70px;
+    text-align: right;
+}
+
+#login_info_text > div:nth-child(3) > span {
+    position: relative;
+    right: -70px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#login_info_text p + p {
+    margin-top: 10px;
+}
+
+#login_info_text p {
+    margin: 0;
+}
+
+.wrap_sendpass {
+    margin: 35px 0 0 0;
+    position: relative;
+    padding-left: 28px;
+    line-height: 1;
+}
+
+.wrap_sendpass::before {
+    content: '';
+    width: 1px;
+    height: 165px;
+    background: #d45959;
+    position: absolute;
+    bottom: 0;
+    left: 17px;
+    z-index: 0;
+}
+
+.sendpass {
+    color: #d45959;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#login_languages {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#login_languages ul {
+    margin: 0;
+    list-style: none;
+    padding: 0 0 10px 5px;
+    position: relative;
+}
+
+#login_languages ul li {
+    line-height: 1;
+}
+
+#login_languages ul > li + li {
+    margin-top: 2px;
+}
+
+#login_languages ul li a {
+    color: #0f595e;
+    transition: all 0.3s;
+}
+
+#login_languages ul li a.active, #login_languages ul li a:hover {
+    color: #d45959;
+}
+
+#login_languages ul::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    border-right: 1px solid #d45959;
+}
+
+#P9999_NEW_CONTAINER .select2-container--default .select2-selection--single {
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    background: #f9f9f9;
+    color: #202020;
+    padding: 1.1rem 0.8rem 0.6rem;
+    line-height: 1.8rem;
+    flex-grow: 1;
+    height: 48px;
+    vertical-align: middle;
+}
+
+#P9999_NEW_CONTAINER .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 48px;
+}
+
+#form_login_content > div#div_login_button {
+    text-align: right;
+}
+
+.LoginWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

@@ -1,0 +1,7 @@
+# dirs
+.git
+node_modules
+dist
+
+# files
+# Dockerfile

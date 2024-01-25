@@ -1,0 +1,46 @@
+version: "3.5"
+
+services:
+  pulse:
+    build: .
+    container_name: pulse
+    working_dir: /app
+    env_file:
+      - .development.env
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    networks:
+      - my_network
+    depends_on:
+      - pgdb
+    restart: always
+
+  pgdb:
+    image: postgres:15.4
+    container_name: pgdb
+    ports:
+      - "5678:5432"
+    env_file:
+      - .development.env
+    environment:
+      PG_DATA: /var/lib/postgresql/data
+    # volumes:
+    #   - pgdata: /var/lib/postgresql/data
+    volumes:
+      - type: volume
+        source: pgdata
+        target: /var/lib/postgresql/data
+        volume:
+          nocopy: true
+    networks:
+      - my_network
+    restart: always
+
+volumes:
+  pgdata:
+
+networks:
+  my_network:
