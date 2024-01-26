@@ -10,7 +10,9 @@ function SubList({ items, route }) {
                 items.map((item, index) => {
                     return (
                         <li key={item.id}>
-                            <a href={item.link || '#'} className={(item.classes || '') + ((item.link && route == '/'+item.link) ? ' active' : '')}>
+                            <a href={item.link || '#'}
+                                className={(item.classes || '') + ((item.link && route == '/'+item.link) ? ' active' : '')}
+                                style={{color: ((item.ready == 0) ? '#ffb404' : '')}}>
                                 {item.title}
                                 {item.sublist && item.sublist.length > 0 &&
                                     <span className='menuArrow'><i className="fa fa-fw fa-angle-right"></i></span>
@@ -40,7 +42,7 @@ export default function SideBar() {
     }
 
     useEffect(() => {
-        axios.get('http://localhost/api/sidebar')
+        axios.get('/api/sidebar')
             .then(res => res.data)
             .then(response => {
                 setDataMenu(response)

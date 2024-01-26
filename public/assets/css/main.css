@@ -809,7 +809,7 @@ main.opened #left_menu {
 /* =========== SCROLLBAR =========== */
 /* W3C standard сейчас только для Firefox */
 #left_menu>ul {
-    scrollbar-width: thin;
+    scrollbar-width: none;
     scrollbar-color: #6092C4 transparent;
 }
 

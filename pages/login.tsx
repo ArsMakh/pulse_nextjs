@@ -87,7 +87,7 @@ export default function Login({ page_data }) {
         formData.append("pass", (document.querySelector('input[name=pass]') as HTMLInputElement).value)
         formData.append("remember", (document.querySelector('input[name=remember]') as HTMLInputElement).value)
 
-        fetch('http://localhost/api/login', {
+        fetch('/api/login', {
             method: "POST",
             body: formData.toString(),
             headers: {
